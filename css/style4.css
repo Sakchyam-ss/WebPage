@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background: url(bg4.jpg);
+}
+.container{
+	width: 100%;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.heading{
+	font-size: 60px;
+	color: #fff;
+	padding: 30px;
+}
+.heading span{
+	color: #34e8eb;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+.heading h1{
+	color: #FF5733;
+}
+.profiles{
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 80px;
+}
+.profile{
+	flex-basis: 260px;
+}
+.profile .profile-img{
+	width: 260px;
+	height: 260px;
+	border-radius: 75%;
+	filter: grayscale(100%);
+	cursor: pointer;
+	transition: 0.4s;
+}
+.profiles .profile:hover .profile-img{
+	filter: grayscale(0%);
+}
+.user-name{
+	margin-top:30px ;
+	font-size: 30px;
+	color: #fff;
+}.profile h3{
+	color: #fff;
+}
+.profile h5{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.profile p{
+	font-size: 12px;
+	color: #fff;
+	margin-top: 20px;
+	text-align: justify;
+}
+.copyrightText{
+	position: absolute;
+	bottom: 20px;
+	padding: 20px;
+	color: #fff;
+	font-size: 1.1em;
+	margin: 20px 0 10px;
+}
+
+@media only screen and (max-width: 1150px){
+	.profiles{
+		flex-direction: column;
+	}
+	.profile{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.profile p{
+		text-align: center;
+		margin-top: 20px 60px 80px 60px;
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
